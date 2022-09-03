@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Angkatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+        <div class="logo">
+            <a class="img"><img src="Logo TI.png" alt=""></a>
+            <h4>TI</h4>
+            <h4>22</h4>
+        </div>
+        <ul class="list">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#">Programme</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+       </nav> 
+</body>
+</html>
+    
+    /*Styling with JS*/
+    <style>    
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(37, 37, 37);
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h4:nth-child(2){
+    color: orange;
+}
+
+.logo h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px;
+    color: antiquewhite;
+    padding-left: 5px;
+}
+
+.logo img {
+    padding-top: 5px;
+    width: 37px;
+    height: 42px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.list li {
+    list-style-type: none;
+    letter-spacing: 5px;
+}
+
+.list a {
+    color: antiquewhite;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    background-color: none;
+}
+
+.burger div {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav .list {
+        size: 30%;
+        width: 60%s;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    nav .list {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        transition: 0,5ms;
+    }
+}
+</style>
+
